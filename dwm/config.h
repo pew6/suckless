@@ -3,17 +3,19 @@
 
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 8;        /* gaps between windows */
+static const unsigned int gappx     = 10;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Fira Code:size=11" };
+static const char *fonts[]          = { "Fira Code:size=11"};
 static const char dmenufont[]       = "Fira Code:size=11";
-static const char col_gray1[]       = "#0b0c0f";
-static const char col_gray2[]       = "#604270";
-static const char col_gray3[]       = "#f8f8f2";
-static const char col_gray4[]       = "#16171d";
-static const char col_cyan[]        = "#9b55f6";
+
+static const char col_gray1[]       = "#2E3440";
+static const char col_gray2[]       = "#3B4252";
+static const char col_gray3[]       = "#D8DEE9";
+static const char col_gray4[]       = "#ECEFF4";
+static const char col_cyan[]        = "#434C5E";
+
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -67,7 +69,7 @@ static const char *termcmd[]  = { "st", NULL };
 
 static const char *upvol[]      = { "/usr/bin/amixer",  "set", "Master", "5%+", NULL };
 static const char *downvol[]    = { "/usr/bin/amixer",  "set", "Master", "5%-", NULL };
-static const char *mutevol[]    = { "/usr/bin/amixerl", "set", "Master", "toggle", NULL };
+static const char *mutevol[]    = { "/usr/bin/amixer", "set", "Master", "toggle", NULL };
 
 static const char *light_up[]   = { "/usr/bin/light",   "-A", "5", NULL };
 static const char *light_down[] = { "/usr/bin/light",   "-U", "5", NULL };
